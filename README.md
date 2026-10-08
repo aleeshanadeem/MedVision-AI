@@ -4,12 +4,10 @@
 > *Bridging primary care and rapid symptom triage through advanced machine learning and instant vitals analytics.*
 
 ---
-
 <p align="center">
   <img src="![Uploading MedVision AI_ Future of Clinical Care.png…]()
-">
+" alt="MedVision AI Banner" width="100%">
 </p>
-
 ---
 
 ## 🚀 Overview
