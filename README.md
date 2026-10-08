@@ -5,8 +5,7 @@
 
 ---
 <p align="center">
-  <img src="![Uploading MedVision AI_ Future of Clinical Care.png…]()
-" alt="MedVision AI Banner" width="100%">
+  <img src="MedVision AI_ Future of Clinical Care" alt="MedVision AI Banner" width="100%">
 </p>
 ---
 
