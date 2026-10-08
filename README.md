@@ -5,6 +5,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aleeshanadeem/MedVision-AI/main/MedVision%20AI%3A%20Future%20of%20Clinical%20Care.png" alt="MedVision AI Banner" width="100%">
+</p>
+
+---
+
 ## 🚀 Overview
 **MedVision AI** is an enterprise-grade web application designed to provide instant, data-driven health risk assessments. Built with a robust Scikit-Learn machine learning pipeline and an intuitive Streamlit interface, it empowers clinicians and patients to perform rapid clinical triage, track session histories, analyze vitals against safe thresholds, and receive customized medical recommendations.
 
@@ -15,7 +21,7 @@
 - **📊 Vitals vs. Benchmark Analytics:** Visual comparison of patient inputs against standard medical safety thresholds.
 - **📁 Patient History Logging:** Session-based tracking to manage multiple patient evaluations seamlessly.
 - **💡 Customized Clinical Recommendations:** Actionable diagnostic and lifestyle guidelines generated dynamically based on prediction results.
-- **🎨 Professional UI/UX:** Clean, patient-facing enterprise layout featuring the signature **2(AN)K AI** branding badge.
+- **🎨 Professional UI/UX:** Clean, patient-facing enterprise layout featuring the signature **(2AN)K AI** branding badge.
 
 ---
 
