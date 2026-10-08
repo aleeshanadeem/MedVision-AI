@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom Styling for Professional Look & 2N Logo Styling
+# Custom Styling for Professional Look & Compact 2(AN)K Logo
 st.markdown("""
     <style>
     .main {
@@ -27,17 +27,17 @@ st.markdown("""
         align-items: center;
         justify-content: center;
         background: linear-gradient(135deg, #1f4068, #162447);
-        padding: 20px;
-        border-radius: 12px;
+        padding: 10px 15px;
+        border-radius: 8px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         border: 1px solid #4e9f3d;
     }
     .logo-text {
-        font-size: 36px;
+        font-size: 20px;
         font-weight: bold;
         color: #ffffff;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -55,7 +55,7 @@ def load_pipeline():
 
 model, scaler = load_pipeline()
 
-# Sidebar: 2N Logo & Healthcare Domain Details
+# Sidebar: Compact 2(AN)K Logo & Healthcare Domain Details
 with st.sidebar:
     st.markdown("""
         <div class="logo-container">
