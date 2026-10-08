@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom Styling for Compact Professional Logo & Metrics
+# Custom Styling for Clean Professional UI & Compact 2(AN)K Logo
 st.markdown("""
     <style>
     .main {
@@ -53,7 +53,7 @@ def load_pipeline():
 
 model, scaler = load_pipeline()
 
-# Sidebar: Compact 2(AN)K Logo & Side-by-Side Telemetry Metrics
+# Sidebar: Compact 2(AN)K Logo & Side-by-Side Telemetry Metrics (No Technical Clutter)
 with st.sidebar:
     st.markdown("""
         <div class="logo-badge">
@@ -61,18 +61,10 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("### 🏥 Clinical System Info")
-    st.info(
-        "**Domain:** Healthcare & AI Triage\n\n"
-        "**Core Engine:** Random Forest Classifier\n"
-        "**Pipeline Norm:** StandardScaler\n"
-        "**Model Accuracy:** 91.25%"
-    )
-    
     st.markdown("---")
     st.subheader("⚡ System Telemetry")
     
-    # Side-by-side compact metrics to save vertical space
+    # Side-by-side compact metrics
     m_col1, m_col2 = st.columns(2)
     with m_col1:
         st.metric(label="Status", value="Active 🟢")
@@ -111,7 +103,7 @@ if nav_mode == "Interactive Triage Suite":
         with col_info:
             st.subheader("Clinical Guidelines")
             st.success(
-                "Enter patient details and vitals on the left. The pipeline will automatically scale parameters using `StandardScaler` and compute risk status."
+                "Enter patient details and vitals on the left. The system will evaluate clinical risk status instantly."
             )
             st.warning("⚠️ **Note:** For clinical support and preliminary screening purposes only.")
             
@@ -145,7 +137,7 @@ if nav_mode == "Interactive Triage Suite":
                 else:
                     st.success(f"**Triage Status:** {status_str}")
             with m2:
-                st.metric(label="Calculated Risk Probability", value=f"{prob:.1f}%", delta="Model Confidence")
+                st.metric(label="Calculated Risk Probability", value=f"{prob:.1f}%", delta="Confidence Score")
             with m3:
                 st.metric(label="Processing Time", value="11 ms", delta="Optimized")
                 
@@ -179,7 +171,7 @@ if nav_mode == "Interactive Triage Suite":
         st.markdown("""
         * **Cardiovascular Health:** Regular blood pressure monitoring helps mitigate hypertension risks early.
         * **Metabolic Tracking:** Maintaining fasting glucose below 100 mg/dL prevents onset diabetic complications.
-        * **Ensemble Reliability:** Random Forest classification guarantees robust decision-making across varied demographics.
+        * **Ensemble Reliability:** Robust decision-making across varied demographics for accurate patient triage.
         """)
 
 elif nav_mode == "Patient History Log":
