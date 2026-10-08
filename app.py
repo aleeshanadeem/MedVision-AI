@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom Styling for Professional Look & Compact 2(AN)K Logo
+# Custom Styling for Compact Professional Logo & Metrics
 st.markdown("""
     <style>
     .main {
@@ -18,26 +18,24 @@ st.markdown("""
     }
     .stMetric {
         background-color: #1a1c23;
-        padding: 15px;
-        border-radius: 10px;
+        padding: 8px !important;
+        border-radius: 8px;
         border: 1px solid #30363d;
     }
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .logo-badge {
+        display: inline-block;
         background: linear-gradient(135deg, #1f4068, #162447);
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-align: center;
-        margin-bottom: 15px;
+        padding: 6px 14px;
+        border-radius: 6px;
         border: 1px solid #4e9f3d;
+        margin-bottom: 10px;
     }
     .logo-text {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         color: #ffffff;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
+        margin: 0;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -55,11 +53,11 @@ def load_pipeline():
 
 model, scaler = load_pipeline()
 
-# Sidebar: Compact 2(AN)K Logo & Healthcare Domain Details
+# Sidebar: Compact 2(AN)K Logo & Side-by-Side Telemetry Metrics
 with st.sidebar:
     st.markdown("""
-        <div class="logo-container">
-            <div class="logo-text">2(AN)K AI</div>
+        <div class="logo-badge">
+            <p class="logo-text">2(AN)K AI</p>
         </div>
     """, unsafe_allow_html=True)
     
@@ -73,8 +71,13 @@ with st.sidebar:
     
     st.markdown("---")
     st.subheader("⚡ System Telemetry")
-    st.metric(label="Pipeline Status", value="Active 🟢", delta="Optimized")
-    st.metric(label="Inference Latency", value="11 ms", delta="Real-time")
+    
+    # Side-by-side compact metrics to save vertical space
+    m_col1, m_col2 = st.columns(2)
+    with m_col1:
+        st.metric(label="Status", value="Active 🟢")
+    with m_col2:
+        st.metric(label="Latency", value="11 ms")
 
     st.markdown("---")
     st.subheader("Navigation Portal")
@@ -181,7 +184,7 @@ if nav_mode == "Interactive Triage Suite":
 
 elif nav_mode == "Patient History Log":
     st.title("📁 Saved Patient History Log")
-    st.markdown("Jitne bhi patients ne session ke दौरान data enter kiya hai, unka complete record yahan save hai:")
+    st.markdown("Jitne bhi patients ne session ke dauran data enter kiya hai, unka complete record yahan save hai:")
     
     if len(st.session_state.patient_history) > 0:
         history_df = pd.DataFrame(st.session_state.patient_history)
