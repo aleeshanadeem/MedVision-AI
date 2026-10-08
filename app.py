@@ -77,7 +77,7 @@ with st.sidebar:
 
 if nav_mode == "Interactive Triage Suite":
     st.title("🩺 MedVision AI: Advanced Clinical Triage Suite")
-    st.markdown("### Intelligent Machine Learning Pipeline for Real-Time Health Risk Assessment & Recommendations")
+    st.markdown("### Real-Time Health Risk Assessment & Recommendations")
     st.markdown("---")
     
     tab1, tab2, tab3 = st.tabs(["🔍 Live Triage Assessment", "📊 Vitals Comparison", "💡 Medical Recommendations"])
