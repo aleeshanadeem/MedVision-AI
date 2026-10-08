@@ -7,6 +7,8 @@
 <p align="center">
   <img src="MedVision AI_ Future of Clinical Care.png" alt="MedVision AI Banner" width="100%">
 </p>
+
+
 ---
 
 ## 🚀 Overview
